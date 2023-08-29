@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <style>
+        .combinebox1box2{
+            display: flex;
+            column-gap: 10px;
+        }
+        #box1, #box2 ,#output{
+            border-style: solid;
+            border-color: darkkhaki;
+            width: fit-content;
+            padding: 10px;
+        }
+    #boxfroarticle{
+            border-style: dashed;
+            border-color: goldenrod;
+            margin: 10px;
+        }
+        .prod{
+            list-style: upper-alpha;
+        }
+    </style>
+</head>
+<body>
+    <div class="combinebox1box2">
+        <div id="box1">
+        <article id="boxfroarticle">
+        <ol class="prod">
+            <li>Keyboard<br><img src="./images/keyboard.jpg" alt="ERROR" width="100px" height="100px"></li><br>  
+            <li>Price <br><input type="text" value="2000"></li><br>
+            <li>Description<p style="color: brown;">The Redgear Invador MK881 Professional Mechanical Keyboard for Pro-Gaming.</p></li>
+            <li>Review <p style="color: coral;">This Keyboard is best</p></li>
+            <input type="button" value="ADD to CART" style="color:blue"><br>
+        </ol></article>
+    </div>
+    <div id="box2">
+        <article id="boxfroarticle">
+        <ol class="prod">
+            <li>Mouse<br><img src="/images/mouse.jpeg" alt="ERROR" width="100px" height="100px"></li><br>  
+            <li>Price <br><input type="text" value="1500"></li><br>
+            <li>Description<p style="color: brown;">A mouse designed for gamers.A mouse designed for gamers. Gaming mouse is the best</p></li>
+            <li>Review <p style="color: coral;">This Mouse is best</p></li>
+            <input type="button" value="ADD to CART" style="color:blue"><br>
+        </ol></article>
+    </div>
+    <div id="output">
+        <table class="forcart">
+            <thead>
+                <tr>
+                    <th scope="col">Sl_No.</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Qtty</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">GST</th>
+                    <th scope="col">Amount</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td scope="col">1</td>
+                    <td>Keyboard</td>
+                    <td>1</td>
+                    <td>1000</td>
+                    <td>10%</td>
+                    <td>1100</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
